@@ -181,7 +181,7 @@ main {
 .currency-table-container .table-bottom-right, .commissions-table-container .table-bottom-right{
     border-radius: 0 0 15px 0;
 }
-.currency-table-container .table-right, .commissions-table-container {
+.currency-table-container .table-right, .commissions-table-container .table-right{
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
@@ -201,4 +201,24 @@ main {
 }
 .up {
     background-image: url('./assets/icons/trending-up.svg');
+}
+.currency-table-date, .commission-table-date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.currency-table-date {
+    background-color: var(--soft-orange);
+}
+.commission-table-date {
+    background-color: var(--soft-blue);
+}
+.currency-table-date p, .commission-table-date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--warm-black);
 }
