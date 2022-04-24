@@ -128,13 +128,26 @@ main {
     line-height: 1.8rem;
     color: #757575;
 }
+.main-tables-container {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.main-tables-container::-webkit-scrollbar {
+    height: 3px;
+}
+.main-tables-container::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
 .main-currency-table, .main-commission-table{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 50px;
     font-family: 'Inter', sans-serif;
+    scroll-snap-align: center;
 }
 .main-currency-table .currency-table-tittle, .main-commission-table .commission-table-tittle{
     margin-bottom: 15px;
